@@ -15,3 +15,5 @@ Install-Package Microsoft.Extensions.Identity.Stores
 Install-Package Microsoft.AspNetCore.Identity.EntityFrameworkCore
 
 Install-Package Microsoft.EntityFrameworkCore.Proxies
+
+Install-Package FluentResult
