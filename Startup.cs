@@ -14,8 +14,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using UserAPI.Data;
 using UserAPI.Controllers;
+using UserAPI.Data;
+using UserAPI.Services;
 
 namespace UserAPI
 {
@@ -42,6 +43,7 @@ namespace UserAPI
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "UserAPI", Version = "v1" });
             });
+            services.AddScoped<CreateRecord, CreateRecord>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddScoped<RegistrationControl, RegistrationControl>();
         }
