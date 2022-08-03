@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using UsersAPI.Data.Dto;
+using UserAPI.Data.Dto;
 
-namespace UsersAPI.Controllers
+namespace UserAPI.Controllers
 {
     [Route("[controller]")]
     [ApiController]
@@ -17,7 +17,7 @@ namespace UsersAPI.Controllers
         public IActionResult UserRegister(CreateUserDto createDto)
         {
             //TODO activate the service
-            return Ok(); 
+            return Ok();
         }
     }
 }
