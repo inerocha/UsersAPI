@@ -1,4 +1,4 @@
-using System;
+uusing System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -19,3 +19,4 @@ namespace UserAPI.Data.Dto
         [Compare("Password")]
         public string RePassoword { get; set; }
     }
+}
